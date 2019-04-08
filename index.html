@@ -7,6 +7,38 @@
     <title>Web Components!</title>
   </head>
   <body>
+    <!-- custom component -->
+    <section>
+      <h2>CUSTOM COMPONENT</h2>
+      <custom-component></custom-component>
+    </section>
+
+    <hr />
+
+    <!-- shadow dom -->
+    <section>
+      <h2>SHADOW DOM</h2>
+      <div id="shadow">This button was created with from a shadowroot</div>
+      <div>
+        <button>
+          Not this one though
+        </button>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- templates -->
+    <section>
+      <h2>TEMPLATES</h2>
+      <template id="book-template">
+        <li>
+          <span class="title"></span> &mdash; <span class="author"></span>
+        </li>
+      </template>
+      <ul id="books"></ul>
+    </section>
+
     <script src="./index.js"></script>
   </body>
 </html>
